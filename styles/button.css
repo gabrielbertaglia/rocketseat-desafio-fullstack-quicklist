@@ -1,0 +1,13 @@
+button {
+  border: 0;
+  background-color: var(--color-brand);
+
+  border-radius: 12px;
+
+  color: var(--always-white);
+  padding: 12px 24px;
+}
+
+button:hover {
+  background-color: var(--color-brand-hover);
+}

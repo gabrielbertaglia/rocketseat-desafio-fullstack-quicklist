@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   font: inherit;
+  box-sizing: border-box;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -33,41 +34,65 @@
 
 html {
   overflow-x: hidden;
-
   scroll-behavior: smooth;
-}
-
-body {
-
-
-  background-color: var(--background-primary);
-  font-family: var(--ff-inter);
-
-
-  padding-inline: 32px;
-  padding-block: 34px;
 }
 
 a {
   text-decoration: none;
   font: var(--link);
   color: var(--color-brand);
-  /* color: inherit; */
 }
 
 h1 {
   font: var(--title);
 }
 
-@media (width >= 80em) {
+/* Mobile Styles (default) */
+body {
+  background-color: var(--background-primary);
+  font-family: var(--ff-inter);
+  padding-inline: 32px;
+  padding-block: 34px;
+
+  .logo {
+    display: none;
+  }
+}
+
+/* Tablets and small devices */
+@media (min-width: 600px) {
   body {
     width: 100%;
     height: 100vh;
 
+    padding-block: 0px;
 
     display: flex;
-  align-items: center;
-  /* justify-content: center; */
-  flex-direction: column;
+    align-items: center;
+    flex-direction: column;
+
+    .logo {
+      display: inherit;
+      padding-block: 25px;
+
+    }
   }
 }
+
+/* Medium devices (laptops/desktops) */
+/* @media (min-width: 768px) {
+  body {
+    padding-inline: 32px;
+    padding-block: 34px;
+  }
+} */
+
+/* Large devices (desktops) */
+/* @media (min-width: 1024px) {
+
+} */
+
+/* Extra large screens */
+/* @media (min-width: 1280px) {
+
+} */
