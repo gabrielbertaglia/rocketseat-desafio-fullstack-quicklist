@@ -4,3 +4,12 @@ form {
 
   gap: 1rem;
 }
+
+/* Tablets and small devices */
+@media (min-width: 600px) {
+  form {
+    width: 100%;
+  flex-direction: row;
+
+  }
+}
