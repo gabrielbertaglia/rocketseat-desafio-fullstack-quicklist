@@ -1,0 +1,27 @@
+.alert {
+  width: 100%;
+
+  margin-top: 36px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-color: var(--color-danger);
+  padding: 0.75rem;
+
+  border-radius: 0.75rem;
+
+  & .alert-content {
+    display: flex;
+    align-items: center;
+
+    gap: 0.5rem;
+  }
+
+  & label {
+    font: var(--label);
+    color: var(--always-white);
+  }
+
+}
