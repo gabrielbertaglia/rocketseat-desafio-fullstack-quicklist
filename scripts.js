@@ -20,7 +20,7 @@ const bins = document.querySelectorAll(".product > img[src='./assets/icons/delet
 function removeProduct(element) {
   element.addEventListener("click", (event) => {
     alertBanner.classList.remove("show-alert");
-    event.target.closest("div#product").remove();
+    event.target.closest("li#product").remove();
   });
 }
 
@@ -31,25 +31,25 @@ form.onsubmit = (event) => {
 
   console.log('oxe, cai aqui ?', listProducts)
 
-  const productDiv = document.createElement("div");
+  const productLi = document.createElement("li");
   const productCheckbox = document.createElement("input");
   const productSpan = document.createElement("span");
   const productDeleteImg = document.createElement("img");
 
-  productDiv.setAttribute("class", "product")
-  productDiv.setAttribute("id", "product")
+  productLi.setAttribute("class", "product")
+  productLi.setAttribute("id", "product")
 
   productCheckbox.setAttribute("type", "checkbox")
-  productDiv.append(productCheckbox);
+  productLi.append(productCheckbox);
 
   productSpan.textContent = inputNewItem.value
-  productDiv.append(productSpan);
+  productLi.append(productSpan);
 
   productDeleteImg.setAttribute("src", "./assets/icons/delete.svg")
   productDeleteImg.setAttribute("alt", "deletar item");
-  productDiv.append(productDeleteImg);
+  productLi.append(productDeleteImg);
 
-  listProducts.prepend(productDiv);
+  listProducts.prepend(productLi);
   removeProduct(productDeleteImg);
 
   inputNewItem.value = ''
