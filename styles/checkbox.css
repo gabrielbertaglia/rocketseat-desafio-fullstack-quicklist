@@ -32,32 +32,31 @@ input[type="checkbox"] {
   padding-right: 8px;
 }
 
-  .product {
-    padding: 8px;
-    background-color: var(--background-secondary);
-    border-radius: 0.75rem;
-    font: var(--paragraph);
-    color: var(--content-secondary);
-    position: relative;
+.product {
+  padding: 8px;
+  background-color: var(--background-secondary);
+  border-radius: 0.75rem;
+  font: var(--paragraph);
+  color: var(--content-secondary);
+  position: relative;
 
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    padding-inline: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding-inline: 0.75rem;
 
-    &>span {
-      flex: 1;
-    }
+  &>span {
+    flex: 1;
+  }
 
-    &>img[src*="delete.svg"] {
-      width: 2rem;
-      height: 2rem;
+  &>img[src*="delete.svg"] {
+    width: 2rem;
+    height: 2rem;
 
-      &:hover {
-        background-color: var(--background-primary);
-        border-radius: 0.75rem;
-        cursor: pointer;
-      }
+    &:hover {
+      background-color: var(--background-primary);
+      border-radius: 0.75rem;
+      cursor: pointer;
     }
   }
 }
