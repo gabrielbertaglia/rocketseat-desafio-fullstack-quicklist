@@ -1,8 +1,4 @@
 <p align="center">
-  <img alt="Logo - Rocketseat" src=".github/logo-rocketseat.png" width="200px" />
-</p>
-
-<p align="center">
 Projeto de uma landing page de lista de compras, onde o usuário pode gerenciar os itens, adicionando e removendo-os.
 </p>
 
